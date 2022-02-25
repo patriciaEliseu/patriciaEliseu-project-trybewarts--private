@@ -69,21 +69,29 @@ form {
   display: flex;
   width: 675px;
 }
+main form {
+  display: flex;
+  flex-direction: column;
+}
 
 #evaluation-form {
-  flex-direction: column;
+  width: 675px
 }
 
 #trybewarts-forms-logo {
   display: flex;
   height: 500px;
+}
 
-
+#titulo-formulario{
+  text-align: center;
+}
+.name-lastname label {
+  align-self: center;
 }
 
 .name-lastname {
- 
-
+  display: flex;
 }
 
 .email-post {
