@@ -37,6 +37,12 @@ body {
   margin: 0 1em;
 }
 
+main , form {
+  display: flex;
+  flex-direction: column;
+  border: 1px black solid;
+}
+
 .trybewarts-login {
   display: flex;
   flex-basis: 35%;
@@ -104,10 +110,6 @@ form {
   display: flex;
 }
 
-.teste {
-  background-color: aqua;
-  border: 1px red solid;
-}
 
 .img-right {
   display: flex;
@@ -120,20 +122,12 @@ form {
   height: 500px;
 }
 
-main,
-form {
+.familias , .content {
   display: flex;
   flex-direction: column;
 }
 
-.familias,
-.content {
-  display: flex;
-  flex-direction: column;
-}
-
-.familias div,
-.content div {
+.familias div , .content div {
   margin: 0.5em 0;
 }
 
@@ -151,5 +145,9 @@ form {
 }
 
 .rate-conteiner {
+  display: flex;
   border: 1px solid black;
+  justify-content: center;
+  flex-direction: row;
+
 }
