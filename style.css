@@ -75,11 +75,6 @@ form {
   width: 675px;
 }
 
-main form {
-  display: flex;
-  flex-direction: column;
-}
-
 #titulo-formulario {
   text-align: center;
 }
@@ -129,19 +124,17 @@ main form {
   height: 500px;
 }
 
-main form {
+main , form {
   display: flex;
   flex-direction: column;
 }
 
-.familias,
-.content {
+.familias , .content {
   display: flex;
   flex-direction: column;
 }
 
-.familias div,
-.content div {
+.familias div , .content div {
   margin: 0.5em 0;
 }
 
