@@ -23,16 +23,34 @@
     </header>
 
     <main>
-        <div>
-            <label id='titulo-formulario' for="evaluation-form"><h1>Formulário de Avaliação</h1></label><br>
-            <form id="evaluation-form" action="" method=""></form>
+
+        <label id='titulo-formulario' for="evaluation-form">
+            <h1>Formulário de Avaliação</h1>
+        </label><br>
+        <form id="evaluation-form" action="" method=""></form>
+        <div class="name-lastname">
             <input id="input-name" type="text" name="Nome" placeholder="Nome">
             <input id="input-lastname" type="text" name="Sobrenome" placeholder="Sobrenome">
+        </div>
+        <div class="email-post">
             <input id="input-email" type="text" name="email" placeholder="Email">
         </div>
-        <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg">
+
+        <label for="house">Casa:</label>
+        <select name="Casa" id="house" class="inputs-e-selects">
+            <option value="" disabled selected>selecione sua casa</option>
+            <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+            <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+            <option id="corvinode-house" value="Corvinode">Corvinode</option>
+            <option id="pytherina-house" value="Pytherina">Pytherina</option>
+        </select>
+
+
 
     </main>
+    <aside>
+        <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo">
+    </aside>
     <script src="script.js"></script>
 </body>
 
