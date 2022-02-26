@@ -44,6 +44,11 @@ body {
   width: 40%;
 }
 
+.rate-1-10 , input {
+  width: 1.25em;
+  margin-right: 0.75em;
+}
+
 .trybewarts-login input {
   color: dimgray;
   width: 100%;
@@ -53,8 +58,7 @@ body {
   padding: 0.5em;
 }
 
-.trybewarts-login button,
-#submit-btn {
+.trybewarts-login button , #submit-btn {
   background-color: rgb(78, 44, 131);
   color: aliceblue;
   width: 100%;
@@ -80,12 +84,10 @@ main form {
 
 #evaluation-form {
   width: 675px;
-  /* Requisito 21 */
 }
 
 .inputs-e-selects {
   width: 100%;
-  /* Reset p/ forms input */
   height: 3em;
   border: none;
   border-radius: 3px;
@@ -94,22 +96,20 @@ main form {
   color: dimgray;
 }
 
-.entrada-dupla-em-linha label {
+.dupla-linha label {
   align-self: center;
 }
 
-.entrada-dupla-em-linha {
+.dupla-linha {
   display: flex;
 }
 
-.familias,
-.content {
+.familias , .content {
   display: flex;
   flex-direction: column;
 }
 
-.familias div,
-.content div {
+.familias div , .content div {
   margin: 0.5em 0;
 }
 
@@ -136,11 +136,6 @@ main form {
   display: flex;
   flex-grow: 1;
   padding-left: 1em;
-}
-
-#container1-10 input {
-  width: 1.25em;
-  margin-right: 0.75em;
 }
 
 #comentario-container {
@@ -186,8 +181,6 @@ hr {
 }
 
 
-/* REQUISITO 19 OK */
-
 footer {
   width: 100%;
   position: fixed;
@@ -199,6 +192,3 @@ footer {
   font-family: Georgia, Times New Roman, Times, serif;
   font-weight: 600;
 }
-
-
-/* Manter uma linha em branco no fim do arquivo por causa do lint */
