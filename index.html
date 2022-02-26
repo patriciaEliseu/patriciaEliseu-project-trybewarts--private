@@ -13,40 +13,36 @@
 <body>
     <!-- cria a caixa verde no topo da tela -->
     <header class="header">
-        <img src="images/trybewarts-header-logo.svg" class="trybewarts-header-logo">
+        <img onClick="window.location.href=window.location.href" class="trybewarts-header-logo" src="./images/trybewarts-header-logo.svg" alt="">
         <h1 id="trybewarts-header-title">Trybewarts</h1>
         <form class="trybewarts-login">
             <input id="login-email" type="email" name="email" placeholder="Email">
-            <input id="login-senha" type="senha" name="password" placeholder="Senha">
-            <button id="botao-entrar">Entrar</button>
+            <input id="login-senha" type="password" name="password" placeholder="Senha">
+            <button id="botao-entrar" type="button">Entrar</button>
         </form>
     </header>
     <main>
         <div>
-            <label id='titulo-formulario' for="evaluation-form">
-                <h1>Formulário de Avaliação</h1>
-            </label><br>
-
+            <label id='titulo-formulario' for="evaluation-form"><h1>Formulário de Avaliação</h1></label><br>
             <form id="evaluation-form" action="" method="">
                 <!-- requisito 8 e 10 -->
 
                 <div class="dupla-linha">
-                    <input class="inputs-e-selects" id="input-name" type="text" name="Nome" placeholder="Nome">
-                    <input class="inputs-e-selects" id="input-lastname" type="text" name="Sobrenome"
-                        placeholder="Sobrenome">
+                    <input class="inputs-e-selects" type="text" id="input-name" placeholder="Nome" name='Nome'>
+                    <input class="inputs-e-selects" type="text" id="input-lastname" placeholder="Sobrenome" name='Sobrenome'>
                 </div>
                 <!-- Requisito 11 -->
                 <div class="dupla-linha">
-                    <input class="inputs-e-selects" id="input-email" type="text" name="email" placeholder="Email">
+                    <input class="inputs-e-selects" type="email" id="input-email" name="Email" placeholder="Email">
                     <!-- requisito 9 -->
                     <label for="house">Casa:</label>
                     <select name="Casa" id="house" class="inputs-e-selects">
-                        <option value="" disabled selected>Escolha sua casa</option>
-                        <option id="gitnoria-house" value="Gitnória">Gitnória</option>
-                        <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
-                        <option id="corvinode-house" value="Corvinode">Corvinode</option>
-                        <option id="pytherina-house" value="Pytherina">Pytherina</option>
-                    </select>
+            <option value="" disabled selected>Escolha sua casa</option>
+            <option value="Gitnória" id="gitnoria-house">Gitnória</option> 
+            <option value="Reactpuff" id="reactpuff-house">Reactpuff</option> 
+            <option value="Corvinode" id="corvinode-house">Corvinode</option> 
+            <option value="Pytherina" id="pytherina-house">Pytherina</option> 
+          </select>
                 </div>
                 <hr>
                 <!-- requisito 12 -->
@@ -132,7 +128,7 @@
                     <label for="" id="counter">500</label>
                 </div>
                 <!-- Requisito 16-->
-                <div id="aceitacao-container">
+                <div class="aceita" id="aceitacao-container">
                     <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
                     <input type="checkbox" id="agreement">
                 </div>
