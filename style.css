@@ -53,7 +53,8 @@ body {
   padding: 0.5em;
 }
 
-.trybewarts-login button {
+.trybewarts-login button,
+#submit-btn {
   background-color: rgb(78, 44, 131);
   color: aliceblue;
   width: 100%;
@@ -79,10 +80,12 @@ main form {
 
 #evaluation-form {
   width: 675px;
+  /* Requisito 21 */
 }
 
 .inputs-e-selects {
   width: 100%;
+  /* Reset p/ forms input */
   height: 3em;
   border: none;
   border-radius: 3px;
@@ -91,20 +94,22 @@ main form {
   color: dimgray;
 }
 
-.dupla-linha label {
+.entrada-dupla-em-linha label {
   align-self: center;
 }
 
-.dupla-linha{
+.entrada-dupla-em-linha {
   display: flex;
 }
 
-.familias , .content {
+.familias,
+.content {
   display: flex;
   flex-direction: column;
 }
 
-.familias div , .content div {
+.familias div,
+.content div {
   margin: 0.5em 0;
 }
 
@@ -133,9 +138,15 @@ main form {
   padding-left: 1em;
 }
 
-.rate-1-10 input {
+#container1-10 input {
   width: 1.25em;
   margin-right: 0.75em;
+}
+
+#comentario-container {
+  display: flex;
+  flex-direction: column;
+  margin: 2em 0;
 }
 
 #textarea {
@@ -144,8 +155,20 @@ main form {
   border-radius: 5px;
 }
 
+#counter {
+  position: relative;
+  align-self: end;
+  bottom: 1.25em;
+  left: -0.25em;
+}
 
-.img-arms {
+#submit-btn {
+  height: 3.5em;
+  font-weight: 900;
+  margin: 1em 0;
+}
+
+.img-right {
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
@@ -163,6 +186,7 @@ hr {
 }
 
 
+/* REQUISITO 19 OK */
 
 footer {
   width: 100%;
@@ -176,3 +200,5 @@ footer {
   font-weight: 600;
 }
 
+
+/* Manter uma linha em branco no fim do arquivo por causa do lint */
